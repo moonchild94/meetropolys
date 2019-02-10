@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">meetropolys</string>
+    <string name="logo">logo</string>
+
+    <string name="sign_in_title">Вход</string>
+    <string name="sign_up_title">Регистрация</string>
+    <string name="sign_email_hint">Email</string>
+    <string name="sign_password_hint">Password</string>
+    <string name="sign_in_else_suggest_label">Или войдите через...</string>
+    <string name="sign_in_button_title">Войти</string>
+    <string name="sign_in_facebook_button_title">Facebook</string>
+    <string name="sign_in_google_button_title">Google +</string>
+    <string name="sign_up_button_title">Создать аккаунт</string>
+    <string name="title_activity_main">MainActivity</string>
+</resources>
