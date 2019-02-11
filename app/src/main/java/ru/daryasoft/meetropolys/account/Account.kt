@@ -1,4 +1,4 @@
-package ru.daryasoft.meetropolys.model
+package ru.daryasoft.meetropolys.account
 
 import io.realm.RealmObject
 import io.realm.annotations.PrimaryKey

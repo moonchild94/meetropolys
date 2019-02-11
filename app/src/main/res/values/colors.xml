@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorPrimaryDark">#1c1d5e</color>
     <color name="colorAccent">#2733ca</color>
-
-    <color name="statusBarColor">#44555555</color>
 
     <color name="sign_in_button_color">#e94f6e</color>
     <color name="sign_in_facebook_button_color">#3b5998</color>
     <color name="sign_in_google_plus_button_color">#dc4e41</color>
+
+    <color name="sign_in_error_color">#e55e5e</color>
 </resources>

@@ -10,9 +10,18 @@ apply plugin: 'realm-android'
 
 ext {
     supportLibrary = "28.0.0"
+    coroutines = "1.1.1"
 }
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'duke'
+            storeFile file('C:/Users/Dagny/.keystore')
+            keyPassword '555555'
+            storePassword '555555'
+        }
+    }
     compileSdkVersion 28
     defaultConfig {
         applicationId "ru.daryasoft.meetropolys"
@@ -21,23 +30,30 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.config
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
         }
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    productFlavors {
+    }
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-    
-    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:${coroutines}"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:${coroutines}"
 
     implementation 'com.android.support.constraint:constraint-layout:1.1.3'
 

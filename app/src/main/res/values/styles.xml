@@ -6,8 +6,6 @@
         <item name="colorAccent">@color/colorAccent</item>
 
         <item name="android:fontFamily">Lato-Regular</item>
-
-        <item name="android:statusBarColor">@color/statusBarColor</item>
     </style>
 
     <style name="SignTabText" parent="TextAppearance.Design.Tab">

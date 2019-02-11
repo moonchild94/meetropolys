@@ -18,8 +18,7 @@ class MainSignFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        sign_pager.adapter =
-            SignFragmentPagerAdapter(fragmentManager, requireContext())
+        sign_pager.adapter = SignFragmentPagerAdapter(fragmentManager, requireContext())
         sign_tabs.setupWithViewPager(sign_pager)
     }
 
